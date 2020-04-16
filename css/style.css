@@ -1,0 +1,873 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div.startup {
+    z-index: 3;
+    background-color: white;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav.navigation {
+
+    float: left;
+    width: 70%;
+
+}
+
+nav.navigation ul {
+    list-style: none;
+    margin-left: 40%;
+
+}
+
+nav.navigation ul li {
+    display: inline-block;
+    margin-right: 9%;
+
+}
+
+
+nav.navigation ul li:nth-child(4) {
+    margin-right: 0;
+
+}
+
+
+
+nav.navigation a {
+
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding-bottom: 4px;
+    transition: 0.1s;
+
+}
+
+
+
+
+nav.navigation a:hover {
+    border-bottom: 2px solid black;
+}
+
+
+
+a.name {
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    float: left;
+    padding-left: 4%;
+    font-size: 35px;
+    letter-spacing: 1px;
+
+    /*    border-bottom: 2px solid black;*/
+}
+
+
+
+/*POCZATEK HEADERA*/
+header {
+
+    margin-top: 13vh;
+    padding-top: 26%;
+    height: 87vh;
+    background-size: cover;
+    background-image: url(../img/makeup-2824659_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    background-attachment: fixed;
+
+
+
+}
+
+
+a.invite {
+
+    position: fixed;
+    font-size: 35px;
+    margin-left: 15%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    line-height: 1.8;
+    background-color: transparent;
+    border: none;
+    padding: 8px 60px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 0;
+
+
+}
+
+
+
+a.invite:hover {
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+@media(max-width:1024px) {
+    header {
+        height: 94vh;
+        margin-top: 6vh;
+        padding-top: 90%;
+
+    }
+
+    a.invite {
+        margin-left: 10%;
+        font-size: 45px;
+    }
+}
+
+@media(max-width:999px) {
+    a.name {
+        width: 32%;
+        padding-left: 25px;
+    }
+
+    nav.navigation {
+        width: 68%;
+    }
+
+    nav.navigation ul {
+
+        margin-left: 30%;
+
+    }
+}
+
+@media(max-width:924px) {
+    nav.navigation ul {
+
+        margin-left: 20%;
+
+    }
+}
+
+@media(max-width:893px) {
+    nav.navigation ul {
+
+        margin-left: 10%;
+    }
+
+    a.name {
+        width: 40%;
+    }
+
+    nav.navigation {
+        width: 60%;
+    }
+}
+
+
+@media(max-width:768px) {
+    nav.navigation {
+        display: none;
+
+    }
+
+    a.name {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    header {
+        background-attachment: scroll;
+    }
+}
+
+@media(max-width:414px) {
+    header {
+        background-position: 50% 90%;
+        padding-top: 125%;
+    }
+
+    a.invite {
+
+        font-size: 27px;
+        padding: 7px 50px;
+
+    }
+
+}
+
+@media(max-width:375px) and (min-height:812px) {
+    header {
+
+        padding-top: 160%;
+    }
+}
+
+@media(max-width:360px) {
+    a.invite {
+        margin-left: 5%;
+    }
+}
+
+@media(max-width:360px) {
+    a.invite {
+        font-size: 25px;
+        padding: 8px 40px;
+    }
+}
+
+@media(max-width:1366px) and (orientation:landscape) and (min-height:1024px) {
+    header {
+        height: 94vh;
+        margin-top: 6vh;
+        padding-top: 50%;
+    }
+
+    a.invite {
+        font-size: 45px;
+    }
+}
+
+@media(max-width:1024px) and (orientation:landscape) {
+    header {
+        padding-top: 40%;
+    }
+}
+
+@media(max-width:823px) and (orientation:landscape) {
+
+    nav.navigation {
+        display: none;
+    }
+
+    a.name {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+
+    }
+
+    header {
+        padding-top: 30%;
+        background-attachment: scroll;
+    }
+
+    a.invite {
+        font-size: 25px;
+    }
+}
+
+
+/*****KONIEC NAWIGACJI I HEADERA*****/
+
+.me {
+    position: relative;
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    z-index: 0;
+
+}
+
+.image {
+
+    float: left;
+    width: 30%;
+    height: 600px;
+    background-image: url(../img/o%20mnie.jpg);
+    background-repeat: no-repeat;
+    margin-left: 10%;
+
+    margin-right: 5%;
+}
+
+.description {
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    background-color: white;
+    width: 35%;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #66757f;
+    line-height: 2.0;
+    font-weight: 200;
+}
+
+
+h1.julia {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+
+
+}
+
+.kotwica {
+    position: relative;
+    background-color: white;
+    color: white;
+    z-index: 2;
+}
+
+/**KONIEC ZAKLADKI O MNIE NA DESKTOPY*************/
+/******ZAKLADKA O MNIE NA MOBILE******/
+@media(max-width:823px) and (orientation:landscape) {
+    .image {
+        display: none;
+    }
+
+    .me {
+        width: 100%;
+
+    }
+
+    .description {
+
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+        position: static;
+        background-color: rgba(240, 240, 240, 0.5);
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+
+    h1.julia {
+        background-color: rgba(240, 240, 240, 0.5);
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 2%;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        position: static;
+    }
+}
+
+
+
+@media(max-width:891px) {
+
+
+    .image {
+        display: none;
+    }
+
+    .me {
+        width: 100%;
+
+    }
+
+    .description {
+
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+        position: static;
+        background-color: rgba(240, 240, 240, 0.5);
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+
+    h1.julia {
+        background-color: rgba(240, 240, 240, 0.5);
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 2%;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        position: static;
+    }
+}
+
+
+
+/******KONIEC ZAKLADKI O MNIE NA MOBILE*****/
+/********POCZATEK OFERTY NA DESKTOPY********/
+
+.oferta {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 120px;
+    padding-top: 65px;
+}
+
+.ofertah1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contener {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.okolicznosciowy {
+    float: left;
+    width: 33%;
+    position: relative;
+}
+
+.dzienny {
+    display: block;
+    float: left;
+    width: 33%;
+    position: relative;
+}
+
+
+.wieczorowy {
+    float: left;
+    width: 33%;
+    position: relative;
+
+}
+
+.obcislyokolicznosciowy {
+    display: inline-block;
+}
+
+.pokolicznosciowy {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+
+}
+
+.obcislyokolicznosciowy:hover .pokolicznosciowy {
+    display: block;
+
+}
+
+.obcislyokolicznosciowy:hover .okolicznosciowyjpg {
+    opacity: 0.4;
+}
+
+
+
+
+.obcislydzienny {
+    display: inline-block;
+}
+
+.pdzienny {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+}
+
+.obcislydzienny:hover p.pdzienny {
+    display: block;
+
+}
+
+.obcislydzienny:hover .dziennyjpg {
+    opacity: 0.4;
+}
+
+
+.obcislywieczorowy {
+    display: inline-block;
+}
+
+.pwieczorowy {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+}
+
+
+.obcislywieczorowy:hover .pwieczorowy {
+    display: block;
+
+}
+
+.obcislywieczorowy:hover .wieczorowyjpg {
+    opacity: 0.4;
+}
+
+div > h2 {
+    margin-bottom: 35px;
+}
+
+/*********KONIEC OFERTY NA DESKTOPY*******/
+/********POCZATEK OFERTY NA MOBILE********/
+@media(max-width:1250px) {
+
+    .contener {
+        width: 100%;
+    }
+
+    .pokolicznosciowy {
+        left: 27%;
+        font-size: 20px;
+    }
+
+    .pdzienny {
+        left: 27%;
+        font-size: 20px;
+    }
+
+    .pwieczorowy {
+        left: 27%;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1100px) {
+    .okolicznosciowy {
+        float: none;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .dzienny {
+        float: none;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .wieczorowy {
+        float: none;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .pokolicznosciowy {
+        left: 37%;
+        font-size: 20px;
+    }
+
+    .pdzienny {
+        left: 37%;
+        font-size: 20px;
+    }
+
+    .pwieczorowy {
+        left: 38%;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:660px) {
+    .pokolicznosciowy {
+        left: 25%;
+        font-size: 20px;
+    }
+
+    .pdzienny {
+        left: 28%;
+        font-size: 20px;
+    }
+
+    .pwieczorowy {
+        left: 29%;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:375px) {
+    .okolicznosciowyjpg {
+        height: 300px;
+    }
+
+    .dziennyjpg {
+        height: 300px;
+    }
+
+    .wieczorowyjpg {
+        height: 300px;
+    }
+}
+
+@media(max-width:320px) {
+    .okolicznosciowyjpg {
+        height: 250px;
+    }
+
+    .dziennyjpg {
+        height: 250px;
+    }
+
+    .wieczorowyjpg {
+        height: 250px;
+    }
+}
+
+/************KONIEC OFERTY NA MOBILE************/
+/*************POCZATEK CENNIKA NA DESKTOPY********/
+
+.wrappercennika {
+    position: relative;
+    z-index: 2;
+
+    background-color: white;
+    padding-bottom: 150px;
+}
+
+.cennik {
+    font-family: Montserrat;
+
+    text-align: center;
+    padding: 20px 50px;
+    border: 10px solid black;
+    width: 70%;
+    margin: 0 auto;
+
+
+}
+
+.h1cennik {
+    font-size: 40px;
+    margin-bottom: 40px;
+
+}
+
+.ceny {
+    font-weight: bold;
+}
+
+.ceny p {
+    margin-bottom: 45px;
+    font-size: 35px;
+}
+
+.kotwica1 {
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 150px;
+    color: transparent;
+}
+
+
+/***********KONIEC CENNIKA NA DESKTOPY**********/
+/*******POCZATEK CENNIKA NA MOBILE******/
+
+@media(max-width:414px) {
+    .ceny p {
+        font-size: 25px;
+
+    }
+
+    .ceny {
+        text-align: center;
+    }
+
+    .cennik {
+        padding: 20px 0px;
+    }
+}
+
+@media(max-width:320px) {
+    .ceny p {
+        font-size: 22px;
+
+    }
+
+
+}
+
+/*******KONIEC CENNIKA NA MOBILE*******/
+/*********POCZATEK KONTAKTU NA DESKTOPY******/
+.kontakt {
+    font-family: Montserrat;
+    border: 10px solid black;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.h1kontakt {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+div.kontakty a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+div.kontakty {
+    float: left;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 110px;
+
+}
+
+.kontaktfb {
+    margin-bottom: 35px;
+}
+
+.kontaktig {
+    margin-bottom: 35px;
+}
+
+.kontaktmail {
+    margin-bottom: 30px;
+}
+
+a i {
+    font-size: 35px;
+    vertical-align: -3px;
+    padding-right: 7px;
+
+}
+
+p i {
+    font-size: 35px;
+    vertical-align: -3px;
+    padding-right: 7px;
+}
+
+.kontakt a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.fota {
+
+    position: absolute;
+    display: block;
+    top: 15%;
+    left: 65%;
+    padding: 15px;
+    border-radius: 20%;
+    opacity: 0.95;
+}
+
+
+
+figure img {
+    filter: saturate(0.6);
+}
+
+figure img {
+    filter: brightness(1.1) contrast(1.3);
+}
+
+.wrapperkontakt {
+    padding-bottom: 100px;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+}
+
+
+.kotwica2 {
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 150px;
+    color: transparent;
+}
+
+
+/*******KONIEC KONTAKTU NA DESKTOPA******/
+/*********POCZATEK KONTAKTU NA MOBILE*******/
+
+@media(max-width:1110px) {
+    .fota {
+        display: none;
+    }
+
+    .kontakt {
+        text-align: center;
+    }
+
+    div.kontakty {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+
+@media(max-width:414px) {
+    div.kontakty {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:375px) {
+    div.kontakty {
+        font-size: 15px;
+    }
+
+    a i {
+        vertical-align: -10px;
+    }
+
+    p i {
+        vertical-align: -10px;
+    }
+}
+
+@media(max-width:320px) {
+    div.kontakty {
+        font-size: 15px;
+    }
+
+    a i {
+        font-size: 25px
+    }
+
+    p i {
+        font-size: 25px;
+    }
+}
